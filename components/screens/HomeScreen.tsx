@@ -13,7 +13,6 @@ const HomeScreen = () => {
    type SplashScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Splash'>;
     const navigation = useNavigation<SplashScreenNavigationProp>();
 
-  // Mock data for past visits
   const pastVisits = [
     { date: '18-03-24', market: 'BAH', storeName: 'Lorem Ipsum', score: 77 },
     { date: '17-03-24', market: 'KWT', storeName: 'Lorem Ipsum', score: 90 },
@@ -27,7 +26,6 @@ const HomeScreen = () => {
     { date: '17-03-24', market: 'MOR', storeName: 'Lorem Ipsum', score: 74 },
   ];
 
-  // Metrics data
   const metrics = [
     { title: 'Planogram Compliance', value: '60%' },
     { title: 'Share of Shelf (SOS)', value: '58%' },
@@ -57,7 +55,7 @@ const HomeScreen = () => {
         </View>
 
         <ScrollView style={s`flex-1`}>
-          {/* Summary Section */}
+          {/* Summary */}
           <View style={s`px-5 py-3`}>
             <View style={s`flex-row justify-between items-center mb-4`}>
               <Text style={s`text-gray-800 text-2xl font-bold`}>Summary</Text>
@@ -67,7 +65,7 @@ const HomeScreen = () => {
               </TouchableOpacity>
             </View>
 
-            {/* Score Circle */}
+            {/* Score */}
             <View style={s`bg-gray-100 rounded-lg p-5 items-center mb-4`}>
               <View style={s`w-32 h-32 rounded-full bg-white justify-center items-center border-8 border-blue-400`}>
                 <Text style={s`text-5xl font-bold text-gray-800`}>60</Text>
@@ -90,7 +88,7 @@ const HomeScreen = () => {
             </ScrollView>
           </View>
 
-          {/* Past Visits Section */}
+          {/* Past Visits */}
           <View style={s`px-5 py-3 pb-20`}>
             <View style={s`flex-row justify-between items-center mb-4`}>
               <Text style={s`text-gray-800 text-2xl font-bold`}>Past Visits</Text>
@@ -144,7 +142,7 @@ const HomeScreen = () => {
           </View>
         </ScrollView>
 
-        {/* Floating Action Button */}
+        {/* Action Button */}
         <TouchableOpacity 
           style={s`absolute bottom-5 right-5 left-5 bg-blue-500 rounded-full py-3 px-6 flex-row justify-center items-center`}
 

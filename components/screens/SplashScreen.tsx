@@ -17,14 +17,12 @@ const SplashScreen = () => {
 
   return (
     <View style={s`flex-1 bg-white justify-center items-center relative`}>
-      {/* Center logo */}
       <Image
         source={require('../../assets/images/logoup.png')}
         style={s`w-48 h-48`}
         resizeMode="contain"
       />
 
-      {/* Bottom image fixed to screen bottom */}
       <View style={s`absolute bottom-0 w-full`}>
         <Image
           source={require('../../assets/images/image.png')}

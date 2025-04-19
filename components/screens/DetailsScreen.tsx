@@ -34,7 +34,7 @@ const DetailsScreen = () => {
         <StatusBar barStyle="dark-content" />
         
         <ScrollView style={s`flex-1`} contentContainerStyle={s`pb-8`}>
-          {/* Progress Stepper */}
+          {/* Progress */}
           <View style={s`px-6 pt-4 pb-4`}>
             <View style={s`flex-row items-center justify-between`}>
               {steps.map((step, index) => (
@@ -68,7 +68,6 @@ const DetailsScreen = () => {
             </View>
           </View>
 
-          {/* Title */}
           <View style={s`px-6 py-4`}>
             <Text style={s`text-2xl font-bold text-gray-800`}>Perfect Store Scorecard</Text>
           </View>
@@ -103,7 +102,6 @@ const DetailsScreen = () => {
               />
             </View>
 
-            {/* Image Upload */}
             <TouchableOpacity 
               style={s`
                 border border-dashed border-gray-300 rounded-lg 
@@ -118,7 +116,6 @@ const DetailsScreen = () => {
               If you selected less than 100%, please share feedback of what you saw in the form of text or a photo
             </Text>
 
-            {/* SOS Section */}
             <View style={s`mb-5`}>
               <Text style={s`text-sm text-gray-500 mb-2`}>SOS</Text>
               <TouchableOpacity 
@@ -164,7 +161,6 @@ const DetailsScreen = () => {
               />
             </View>
 
-            {/* Image Upload */}
             <TouchableOpacity 
               style={s`
                 border border-dashed border-gray-300 rounded-lg 
@@ -179,7 +175,6 @@ const DetailsScreen = () => {
               If you selected no, please share feedback of what you saw in the form of text or a photo.
             </Text>
 
-            {/* Must Stock List */}
             <View style={s`mb-5`}>
               <Text style={s`text-sm text-gray-500 mb-2`}>Must Stock List</Text>
               <TouchableOpacity 
@@ -211,7 +206,6 @@ const DetailsScreen = () => {
               />
             </View>
 
-            {/* Image Upload */}
             <TouchableOpacity 
               style={s`
                 border border-dashed border-gray-300 rounded-lg 
@@ -275,7 +269,6 @@ const DetailsScreen = () => {
           </View>
         </ScrollView>
 
-        {/* Bottom Navigation Buttons */}
         <View style={s`
           flex-row justify-between px-6 py-4 
           border-t border-gray-200 bg-white
